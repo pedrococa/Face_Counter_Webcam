@@ -1,4 +1,4 @@
-name: face_counter_webcam
+name: facecounterwebcam
 version: 0.1
 vendor: Didier Roche <didier.roche@canonical.com>
 summary: Demo for Face Detection statistics
