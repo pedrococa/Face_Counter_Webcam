@@ -1,4 +1,4 @@
-# Face detection example demo
+# Face Counter Webcam example demo
 
 This demo illustrates how to reuse simple pieces from the Ubuntu distribution to detect and count the number of people stopping
 by at a booth. It has as well a `demo-scripts/` directory which contains script to reinstall, update and rollback to show up
