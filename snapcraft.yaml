@@ -1,0 +1,28 @@
+name: face_counter_webcam
+version: 0.1
+vendor: Didier Roche <didier.roche@canonical.com>
+summary: Demo for Face Detection statistics
+description: |
+  This demo shows face detection statics parameterized to take a picture through a webcam X seconds
+  (timing between pictures can be defined in $SNAP_DATA/settings). Report results through a web interface
+  on 8042 port (configurable as well).
+icon: Face_Detection_Counter_Logo.png 
+
+services:
+  facedetectionweb:
+    start: bin/facedetection.exports
+    description: Web interface detecting faces from webcam shots
+    security-template: unconfined
+
+parts:
+  demo:
+    plugin: copy
+    files:
+      'bin/*': 'bin/'
+      'logic.xml': 'logic.xml'
+      'facedetection': 'facedetection'
+    stage-packages:
+     - python-dev
+     - python-opencv
+     - python-numpy
+     - python-yaml
