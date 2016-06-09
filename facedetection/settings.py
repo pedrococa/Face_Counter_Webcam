@@ -34,7 +34,7 @@ with suppress(IOError):
 WEBSERVER_PORT = int(settings.get("webserver-port", 8042))
 SOCKET_PORT = WEBSERVER_PORT + 1
 
-TIME_BETWEEN_SHOTS = int(settings.get("interval-shots", 10))
+TIME_BETWEEN_SHOTS = int(settings.get("interval-shots", 3))
 
 LAST_SCREENSHOT = "last_screen.png"
 LAST_FACES = "last_faces.png"
